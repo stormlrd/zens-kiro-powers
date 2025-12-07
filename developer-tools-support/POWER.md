@@ -4,6 +4,7 @@ displayName: "Developer Tools & Support"
 description: "Developer productivity tools - Code documentation generation, frontend development, Git research, IAM management, OpenAPI, synthetic data, and security best practices"
 keywords: ["developer", "tools", "documentation", "frontend", "git", "iam", "openapi", "security", "well-architected"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Developer Tools & Support Power

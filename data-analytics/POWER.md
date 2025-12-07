@@ -4,6 +4,7 @@ displayName: "Data & Analytics"
 description: "Data & Analytics services and tools - DynamoDB, RDS, Aurora DSQL, Neptune, Keyspaces, DocumentDB, ElastiCache, Redshift, and S3 Tables for data management"
 keywords: ["data", "analytics", "database", "dynamodb", "rds", "aurora", "neptune", "redshift", "sql", "nosql"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Data & Analytics Power

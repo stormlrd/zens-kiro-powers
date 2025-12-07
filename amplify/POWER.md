@@ -4,6 +4,7 @@ displayName: "AWS Amplify"
 description: "AWS Amplify for full-stack application development - build and deploy web and mobile applications with authentication, APIs, storage, and hosting"
 keywords: ["amplify", "fullstack", "frontend", "backend", "hosting", "authentication", "graphql", "appsync"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # AWS Amplify Power

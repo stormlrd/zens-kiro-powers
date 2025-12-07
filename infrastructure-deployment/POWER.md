@@ -4,6 +4,7 @@ displayName: "Infrastructure & Deployment"
 description: "Infrastructure as Code and deployment tools - CDK, CloudFormation, Terraform, Lambda, ECS, EKS, Serverless, and Finch for building and deploying AWS infrastructure"
 keywords: ["infrastructure", "deployment", "cdk", "cloudformation", "terraform", "lambda", "ecs", "eks", "iac", "serverless"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Infrastructure & Deployment Power

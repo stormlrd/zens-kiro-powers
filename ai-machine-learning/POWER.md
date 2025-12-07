@@ -4,6 +4,7 @@ displayName: "AI & Machine Learning"
 description: "AI & Machine Learning services and tools - Amazon Bedrock, Kendra, Q Business, Knowledge Bases, and Nova Canvas for building intelligent applications"
 keywords: ["ai", "ml", "bedrock", "kendra", "qbusiness", "knowledge-base", "nova", "machine-learning", "genai"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # AI & Machine Learning Power

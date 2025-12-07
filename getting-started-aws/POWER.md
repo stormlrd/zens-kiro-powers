@@ -4,6 +4,7 @@ displayName: "Getting Started with AWS"
 description: "Essential AWS services for beginners - AWS API access and AWS Knowledge Base for learning and exploring AWS services"
 keywords: ["aws", "getting-started", "api", "knowledge", "documentation", "learning", "beginner"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Getting Started with AWS Power

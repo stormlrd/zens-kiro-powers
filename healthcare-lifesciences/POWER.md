@@ -4,6 +4,7 @@ displayName: "Healthcare & Lifesciences"
 description: "Healthcare and lifesciences services - AWS HealthOmics for genomics and HealthLake for FHIR-based healthcare data management"
 keywords: ["healthcare", "lifesciences", "healthomics", "healthlake", "genomics", "fhir", "medical"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Healthcare & Lifesciences Power

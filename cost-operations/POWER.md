@@ -4,6 +4,7 @@ displayName: "Cost & Operations"
 description: "Cost management and operational monitoring - AWS Pricing, Cost Explorer, CloudWatch, CloudTrail, Billing, and Prometheus for cost optimization and observability"
 keywords: ["cost", "operations", "pricing", "cloudwatch", "monitoring", "billing", "observability", "prometheus"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Cost & Operations Power

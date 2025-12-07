@@ -4,6 +4,7 @@ displayName: "Documentation"
 description: "AWS documentation access - Comprehensive AWS service documentation, API references, and best practices guides"
 keywords: ["documentation", "docs", "api", "reference", "guides", "aws-docs"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Documentation Power

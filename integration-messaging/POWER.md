@@ -4,6 +4,7 @@ displayName: "Integration & Messaging"
 description: "Integration & Messaging services - SNS, SQS, AppSync, Amazon MQ, MSK, and Step Functions for building event-driven and messaging architectures"
 keywords: ["messaging", "integration", "sns", "sqs", "appsync", "mq", "kafka", "msk", "stepfunctions", "events"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Integration & Messaging Power

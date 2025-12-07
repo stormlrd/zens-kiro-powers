@@ -4,6 +4,7 @@ displayName: "Specialized Services"
 description: "Specialized AWS services - Data processing, AWS diagrams, IoT SiteWise, Location Services, Core utilities, and Timestream for InfluxDB"
 keywords: ["specialized", "iot", "location", "diagrams", "timestream", "data-processing", "utilities"]
 author: "Zen"
+repository: "https://github.com/stormlrd/zens-kiro-powers"
 ---
 
 # Specialized Services Power
