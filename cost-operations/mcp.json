@@ -1,0 +1,80 @@
+{
+  "mcpServers": {
+    "aws-pricing": {
+      "command": "uvx",
+      "args": ["awslabs.aws-pricing-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "cost-explorer": {
+      "command": "uvx",
+      "args": ["awslabs.cost-explorer-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "billing-cost-management": {
+      "command": "uvx",
+      "args": ["awslabs.billing-cost-management-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "cloudwatch": {
+      "command": "uvx",
+      "args": ["awslabs.cloudwatch-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "transportType": "stdio",
+      "disabled": false,
+      "autoApprove": []
+    },
+    "cloudwatch-appsignals": {
+      "command": "uvx",
+      "args": ["awslabs.cloudwatch-appsignals-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "transportType": "stdio",
+      "disabled": true,
+      "autoApprove": []
+    },
+    "cloudtrail": {
+      "command": "uvx",
+      "args": ["awslabs.cloudtrail-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "transportType": "stdio",
+      "disabled": false,
+      "autoApprove": []
+    },
+    "prometheus": {
+      "command": "uvx",
+      "args": ["awslabs.prometheus-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "DEBUG"
+      },
+      "disabled": true,
+      "autoApprove": []
+    }
+  },
+  "disabled": false
+}

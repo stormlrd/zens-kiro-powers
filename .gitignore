@@ -1,0 +1,3 @@
+# Kiro MCP Manager - Sensitive configuration files
+.kiro/settings/
+for-kiro-only/

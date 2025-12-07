@@ -1,0 +1,64 @@
+{
+  "mcpServers": {
+    "sns-sqs": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-sns-sqs-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "appsync": {
+      "command": "uvx",
+      "args": ["awslabs.aws-appsync-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "amazon-mq": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-mq-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "msk": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-msk-mcp-server@latest",
+        "--allow-writes"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "stepfunctions": {
+      "command": "uvx",
+      "args": ["awslabs.stepfunctions-tool-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "STATE_MACHINE_PREFIX": "${STATE_MACHINE_PREFIX}",
+        "STATE_MACHINE_LIST": "${STATE_MACHINE_LIST}",
+        "STATE_MACHINE_TAG_KEY": "${STATE_MACHINE_TAG_KEY}",
+        "STATE_MACHINE_TAG_VALUE": "${STATE_MACHINE_TAG_VALUE}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    }
+  },
+  "disabled": false
+}

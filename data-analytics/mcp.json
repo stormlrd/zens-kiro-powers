@@ -1,0 +1,167 @@
+{
+  "mcpServers": {
+    "dynamodb": {
+      "command": "uvx",
+      "args": ["awslabs.dynamodb-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "aurora-dsql": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aurora-dsql-mcp-server@latest",
+        "--cluster_endpoint",
+        "${CLUSTER}.dsql.${REGION}.on.aws",
+        "--region",
+        "${REGION}",
+        "--database_user",
+        "admin"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "mysql": {
+      "command": "uvx",
+      "args": [
+        "awslabs.mysql-mcp-server@latest",
+        "--resource_arn",
+        "${MYSQL_RESOURCE_ARN}",
+        "--secret_arn",
+        "${MYSQL_SECRET_ARN}",
+        "--database",
+        "${MYSQL_DATABASE}",
+        "--region",
+        "${AWS_REGION}",
+        "--readonly",
+        "True"
+      ],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "postgres": {
+      "command": "uvx",
+      "args": [
+        "awslabs.postgres-mcp-server@latest",
+        "--resource_arn",
+        "${POSTGRES_RESOURCE_ARN}",
+        "--secret_arn",
+        "${POSTGRES_SECRET_ARN}",
+        "--database",
+        "${POSTGRES_DATABASE}",
+        "--region",
+        "${AWS_REGION}",
+        "--readonly",
+        "True"
+      ],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "neptune": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-neptune-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "INFO",
+        "NEPTUNE_ENDPOINT": "${NEPTUNE_ENDPOINT}",
+        "AWS_PROFILE": "${AWS_PROFILE}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "keyspaces": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-keyspaces-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "documentdb": {
+      "command": "uvx",
+      "args": ["awslabs.documentdb-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "elasticache": {
+      "command": "uvx",
+      "args": ["awslabs.elasticache-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "memcached": {
+      "command": "uvx",
+      "args": ["awslabs.memcached-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "MEMCACHED_HOST": "${MEMCACHED_HOST}",
+        "MEMCACHED_PORT": "11211"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "valkey": {
+      "command": "uvx",
+      "args": ["awslabs.valkey-mcp-server@latest"],
+      "env": {
+        "VALKEY_HOST": "${VALKEY_HOST}",
+        "VALKEY_PORT": "6379",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "redshift": {
+      "command": "uvx",
+      "args": ["awslabs.redshift-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_DEFAULT_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "INFO"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "s3-tables": {
+      "command": "uvx",
+      "args": ["awslabs.s3-tables-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    }
+  },
+  "disabled": false
+}

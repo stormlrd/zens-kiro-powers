@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "healthomics": {
+      "command": "uvx",
+      "args": ["awslabs.aws-healthomics-mcp-server@latest"],
+      "env": {
+        "AWS_REGION": "${AWS_REGION}",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "FASTMCP_LOG_LEVEL": "WARNING"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "healthlake": {
+      "command": "uvx",
+      "args": ["awslabs.healthlake-mcp-server@latest"],
+      "env": {
+        "AWS_REGION": "${AWS_REGION}",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "MCP_LOG_LEVEL": "INFO"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  },
+  "disabled": false
+}

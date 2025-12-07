@@ -1,0 +1,106 @@
+{
+  "mcpServers": {
+    "bedrock-agentcore": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-bedrock-agentcore-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "kendra-index": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-kendra-index-mcp-server@latest"],
+      "env": {
+        "AWS_REGION": "${AWS_REGION}",
+        "KEND_INDEX_ID": "${KEND_INDEX_ID}",
+        "KEND_ROLE_ARN": "${KEND_ROLE_ARN}",
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "qbusiness-anonymous": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-qbusiness-anonymous-mcp-server@latest"],
+      "env": {
+        "QBUSINESS_APP_ID": "${QBUSINESS_APP_ID}",
+        "QBUSINESS_USER_ID": "${QBUSINESS_USER_ID}",
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "qindex": {
+      "command": "uvx",
+      "args": ["awslabs.amazon-qindex-mcp-server@latest"],
+      "env": {
+        "AWS_REGION": "${AWS_REGION}",
+        "QINDEX_ID": "${QINDEX_ID}",
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_PROFILE": "${AWS_PROFILE}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "bedrock-custom-model-import": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-bedrock-custom-model-import-mcp-server@latest",
+        "--allow-write"
+      ],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "BEDROCK_MODEL_IMPORT_S3_BUCKET": "${BEDROCK_MODEL_IMPORT_S3_BUCKET}",
+        "BEDROCK_MODEL_IMPORT_ROLE_ARN": "${BEDROCK_MODEL_IMPORT_ROLE_ARN}"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "bedrock-data-automation": {
+      "command": "uvx",
+      "args": ["awslabs.aws-bedrock-data-automation-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "AWS_BUCKET_NAME": "${AWS_BUCKET_NAME}",
+        "BASE_DIR": "${BASE_DIR}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": true,
+      "autoApprove": []
+    },
+    "bedrock-kb-retrieval": {
+      "command": "uvx",
+      "args": ["awslabs.bedrock-kb-retrieval-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "KB_INCLUSION_TAG_KEY": "${KB_INCLUSION_TAG_KEY}",
+        "BEDROCK_KB_RERANKING_ENABLED": "false"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "nova-canvas": {
+      "command": "uvx",
+      "args": ["awslabs.nova-canvas-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "${AWS_PROFILE}",
+        "AWS_REGION": "${AWS_REGION}",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  },
+  "disabled": false
+}
